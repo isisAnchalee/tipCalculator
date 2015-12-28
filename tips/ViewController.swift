@@ -22,12 +22,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        populateDefaultPercents()
+        
+    }
+    
     @IBAction func onEditingChanged(sender: AnyObject) {
         let tipPercentages = [0.18, 0.2, 0.22]
         let tipPercentage = tipPercentages[tipSegment.selectedSegmentIndex]
@@ -38,8 +44,9 @@ class ViewController: UIViewController {
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text = String(format:"$%.2f", total)
         populateDividedAmounts(total)
+        populateDefaultPercents()
     }
-
+    
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
@@ -57,6 +64,22 @@ class ViewController: UIViewController {
         }
     }
     
-
+    func populateDefaultPercents() {
+        let percents = ["first", "second", "third"]
+        for i in 0...2{
+            getPercentValue(percents[i], index: i)
+        }
+    }
+    
+    func getPercentValue(key: String, index: Int) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let percent = defaults.integerForKey(key)
+        setSegmentPercentValue(key, percent: percent, index: index)
+    }
+    
+    func setSegmentPercentValue(key: String, percent: Int, index: Int) {
+        tipSegment.setTitle("\(percent)%", forSegmentAtIndex: index)
+    }
+    
 }
 

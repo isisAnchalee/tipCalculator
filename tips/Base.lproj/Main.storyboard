@@ -31,10 +31,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5n4-jJ-TPC">
-                                        <rect key="frame" x="158" y="217" width="209" height="36"/>
+                                        <rect key="frame" x="158" y="217" width="209" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="$100.00">
+                                            <fragment content="$0.00">
                                                 <attributes>
                                                     <color key="NSColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="38" name="HelveticaNeue-Bold"/>
@@ -44,7 +44,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yqD-uF-PaZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yqD-uF-PaZ">
                                         <rect key="frame" x="167" y="171" width="197" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -63,7 +63,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Xd-HN-Qjh">
-                                                <rect key="frame" x="87" y="-8" width="54" height="115"/>
+                                                <rect key="frame" x="111" y="-8" width="54" height="115"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="$">
@@ -76,8 +76,8 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1337.00" minimumFontSize="17" id="Ewf-ye-Kfd">
-                                                <rect key="frame" x="145" y="3" width="195" height="107"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" minimumFontSize="17" id="Ewf-ye-Kfd">
+                                                <rect key="frame" x="171" y="3" width="195" height="107"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
@@ -98,7 +98,7 @@
                                                 <rect key="frame" x="141" y="121" width="225" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="$500.00">
+                                                    <fragment content="$0.00">
                                                         <attributes>
                                                             <color key="NSColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="38" name="HelveticaNeue-Bold"/>
@@ -112,7 +112,7 @@
                                                 <rect key="frame" x="141" y="36" width="225" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="$500.00">
+                                                    <fragment content="$0.00">
                                                         <attributes>
                                                             <color key="NSColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="38" name="HelveticaNeue-Bold"/>
@@ -126,7 +126,7 @@
                                                 <rect key="frame" x="141" y="205" width="225" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="$500.00">
+                                                    <fragment content="$0.00">
                                                         <attributes>
                                                             <color key="NSColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="38" name="HelveticaNeue-Bold"/>
@@ -292,11 +292,11 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" id="7F8-zf-JVC">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="505"/>
+                                        <rect key="frame" x="0.0" y="155" width="375" height="406"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="LoI-gO-pAT">
-                                                <rect key="frame" x="46" y="180" width="284" height="31"/>
+                                                <rect key="frame" x="46" y="81" width="284" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="minimumTrackTintColor" red="0.44247891280000001" green="0.43786975750000001" blue="0.44708806820000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
@@ -304,49 +304,49 @@
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shitty Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rS1-gr-HKf">
-                                                <rect key="frame" x="48" y="148" width="132" height="29"/>
+                                                <rect key="frame" x="48" y="49" width="132" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b2F-x4-6dU">
-                                                <rect key="frame" x="48" y="251" width="117" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OK Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b2F-x4-6dU">
+                                                <rect key="frame" x="48" y="152" width="117" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cj8-e2-EkL">
-                                                <rect key="frame" x="211" y="203" width="117" height="29"/>
+                                                <rect key="frame" x="211" y="104" width="117" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J0W-e2-HHU">
-                                                <rect key="frame" x="210" y="310" width="117" height="29"/>
+                                                <rect key="frame" x="210" y="211" width="117" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1et-le-6fM">
-                                                <rect key="frame" x="211" y="419" width="117" height="29"/>
+                                                <rect key="frame" x="211" y="320" width="117" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CpE-j0-HBp">
-                                                <rect key="frame" x="47" y="362" width="164" height="29"/>
+                                                <rect key="frame" x="47" y="263" width="164" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="het-zQ-tpt">
-                                                <rect key="frame" x="45" y="288" width="284" height="31"/>
+                                                <rect key="frame" x="45" y="189" width="284" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="minimumTrackTintColor" red="0.44247891280000001" green="0.43786975750000001" blue="0.44708806820000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
@@ -354,37 +354,13 @@
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="L8o-RF-UY1">
-                                                <rect key="frame" x="45" y="395" width="284" height="31"/>
+                                                <rect key="frame" x="45" y="296" width="284" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="minimumTrackTintColor" red="0.44247891280000001" green="0.43786975750000001" blue="0.44708806820000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="changeThirdPercent:" destination="JRY-oz-51J" eventType="valueChanged" id="RQ0-Ps-zjp"/>
                                                 </connections>
                                             </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please set default tip amounts." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="emP-mg-cRA">
-                                                <rect key="frame" x="16" y="20" width="345" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                                <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vQ6-RD-a4g">
-                                                <rect key="frame" x="8" y="57" width="367" height="48"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="💩💩💩💩💩💩💩">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="36" name="AppleColorEmoji"/>
-                                                            <real key="NSKern" value="0.0"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
-                                                                <tabStops/>
-                                                            </paragraphStyle>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.58617625470000001" green="0.5827472252" blue="0.66047190659999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -398,6 +374,31 @@
                                                     <font key="NSFont" size="36" name="AppleColorEmoji"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please set default tip amounts." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="emP-mg-cRA">
+                                        <rect key="frame" x="17" y="59" width="345" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <color key="textColor" red="0.85353535349999998" green="0.85353535349999998" blue="0.85353535349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vw6-1C-oep">
+                                        <rect key="frame" x="4" y="91" width="367" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="💩💩💩">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="36" name="AppleColorEmoji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
                                                         <tabStops/>
                                                     </paragraphStyle>
                                                     <color key="NSStrokeColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
@@ -422,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62s-wo-o8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978.5" y="181.5"/>
+            <point key="canvasLocation" x="978.5" y="169.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="geN-b3-qW2">

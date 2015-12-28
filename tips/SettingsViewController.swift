@@ -15,18 +15,30 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var thirdPercent: UILabel!
     
     @IBAction func changePercent(sender: UISlider) {
-        firstPercent.text = "\(Int(sender.value * 100))%"
+        let percent = Int(sender.value * 100)
+        firstPercent.text = "\(percent)%"
+        savePercentage(percent, key: "first")
     }
     
     @IBAction func changeSecondPercent(sender: UISlider) {
-        secondPercent.text = "\(Int(sender.value * 100))%"
+        let percent = Int(sender.value * 100)
+        secondPercent.text = "\(percent)%"
+        savePercentage(percent, key: "second")
     }
     
     @IBAction func changeThirdPercent(sender: UISlider) {
-        thirdPercent.text = "\(Int(sender.value * 100))%"
+        let percent = Int(sender.value * 100)
+        thirdPercent.text = "\(percent)%"
+        savePercentage(percent, key: "third")
     }
     
     @IBAction func SettingsBack(sender: AnyObject) {
       dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func savePercentage(percent: Int, key: String) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(percent, forKey: key)
+        defaults.synchronize()
     }
 }
