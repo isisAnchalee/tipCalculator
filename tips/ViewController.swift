@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipSegment: UISegmentedControl!
     @IBOutlet weak var settingsLabel: UILabel!
+    @IBOutlet weak var twoPeople: UILabel!
+    @IBOutlet weak var threePeople: UILabel!
+    @IBOutlet weak var fourPeople: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +29,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
-        print("User editing bill")
         let tipPercentages = [0.18, 0.2, 0.22]
         let tipPercentage = tipPercentages[tipSegment.selectedSegmentIndex]
         let amount = NSString(string: billField.text!).doubleValue
@@ -34,10 +37,26 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text = String(format:"$%.2f", total)
+        populateDividedAmounts(total)
     }
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
+    
+    func divideBill(total: Double, people: Double) {
+        let parties = [twoPeople, threePeople, fourPeople]
+        let billAmount = total / people
+        print(billAmount)
+        parties[Int(people) - 2].text = String(format:"$%.2f", billAmount)
+    }
+    
+    func populateDividedAmounts(amount: Double){
+        for party in 2...4{
+            divideBill(amount, people: Double(party))
+        }
+    }
+    
+
 }
 
