@@ -35,8 +35,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEditingChanged(sender: AnyObject) {
-        let tipPercentages = [0.18, 0.2, 0.22]
-        let tipPercentage = tipPercentages[tipSegment.selectedSegmentIndex]
+        populateDefaultPercents()
+        let tipPercentages = populatePercentArray()
+        let tipPercentage = Double(tipPercentages[tipSegment.selectedSegmentIndex])
         let amount = NSString(string: billField.text!).doubleValue
         let tip = amount * tipPercentage
         let total = amount + tip
@@ -44,7 +45,7 @@ class ViewController: UIViewController {
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text = String(format:"$%.2f", total)
         populateDividedAmounts(total)
-        populateDefaultPercents()
+        
     }
     
     @IBAction func onTap(sender: AnyObject) {
@@ -54,7 +55,6 @@ class ViewController: UIViewController {
     func divideBill(total: Double, people: Double) {
         let parties = [twoPeople, threePeople, fourPeople]
         let billAmount = total / people
-        print(billAmount)
         parties[Int(people) - 2].text = String(format:"$%.2f", billAmount)
     }
     
@@ -62,6 +62,19 @@ class ViewController: UIViewController {
         for party in 2...4{
             divideBill(amount, people: Double(party))
         }
+    }
+    
+    func populatePercentArray() -> [Float]  {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let percents = ["first", "second", "third"]
+        var values  = [Float]()
+        
+        for i in 0...2{
+            values.append(Float(Float(defaults.integerForKey(percents[i]))/100))
+        }
+        
+        print(values)
+        return values
     }
     
     func populateDefaultPercents() {

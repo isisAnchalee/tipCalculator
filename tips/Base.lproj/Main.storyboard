@@ -416,9 +416,12 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="firstPercent" destination="Cj8-e2-EkL" id="Gem-wy-VKH"/>
-                        <outlet property="secondPercent" destination="J0W-e2-HHU" id="KzH-b0-I4Y"/>
-                        <outlet property="thirdPercent" destination="1et-le-6fM" id="dvO-7v-M1U"/>
+                        <outlet property="firstPercentLabel" destination="Cj8-e2-EkL" id="u6F-JQ-d56"/>
+                        <outlet property="firstSlider" destination="LoI-gO-pAT" id="Pnm-MS-jnN"/>
+                        <outlet property="secondPercentLabel" destination="J0W-e2-HHU" id="lsT-YU-AAa"/>
+                        <outlet property="secondSlider" destination="het-zQ-tpt" id="hCG-fA-ALp"/>
+                        <outlet property="thirdPercentLabel" destination="1et-le-6fM" id="8BC-ld-4n4"/>
+                        <outlet property="thirdSlider" destination="L8o-RF-UY1" id="Kut-x3-ghk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62s-wo-o8c" userLabel="First Responder" sceneMemberID="firstResponder"/>

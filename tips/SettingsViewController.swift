@@ -10,25 +10,28 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
-    @IBOutlet weak var firstPercent: UILabel!
-    @IBOutlet weak var secondPercent: UILabel!
-    @IBOutlet weak var thirdPercent: UILabel!
+    @IBOutlet weak var firstPercentLabel: UILabel!
+    @IBOutlet weak var secondPercentLabel: UILabel!
+    @IBOutlet weak var thirdPercentLabel: UILabel!
+    @IBOutlet weak var firstSlider: UISlider!
+    @IBOutlet weak var secondSlider: UISlider!
+    @IBOutlet weak var thirdSlider: UISlider!
     
     @IBAction func changePercent(sender: UISlider) {
         let percent = Int(sender.value * 100)
-        firstPercent.text = "\(percent)%"
+        firstPercentLabel.text = "\(percent)%"
         savePercentage(percent, key: "first")
     }
     
     @IBAction func changeSecondPercent(sender: UISlider) {
         let percent = Int(sender.value * 100)
-        secondPercent.text = "\(percent)%"
+        secondPercentLabel.text = "\(percent)%"
         savePercentage(percent, key: "second")
     }
     
     @IBAction func changeThirdPercent(sender: UISlider) {
         let percent = Int(sender.value * 100)
-        thirdPercent.text = "\(percent)%"
+        thirdPercentLabel.text = "\(percent)%"
         savePercentage(percent, key: "third")
     }
     
@@ -36,9 +39,38 @@ class SettingsViewController: UIViewController {
       dismissViewControllerAnimated(true, completion: nil)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        populateDefaultPercents()
+        
+    }
+    
     func savePercentage(percent: Int, key: String) {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setInteger(percent, forKey: key)
         defaults.synchronize()
+    }
+    
+    func populateDefaultPercents() {
+        let percents = ["first", "second", "third"]
+        for i in 0...2{
+            getPercentValue(percents[i], index: i)
+        }
+    }
+    
+    func getPercentValue(key: String, index: Int) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let percent = defaults.integerForKey(key)
+        setPercentValue(percent, index: index)
+    }
+    
+    func setPercentValue(percent: Int, index: Int) {
+        let UIpercents = [firstPercentLabel, secondPercentLabel, thirdPercentLabel]
+        let sliders = [firstSlider, secondSlider, thirdSlider]
+        let sliderPercent = Float(Float(percent) / 100.00)
+        print(sliderPercent)
+
+        UIpercents[index].text = "\(percent)%"
+        sliders[index].setValue(Float(sliderPercent), animated: false)
     }
 }
