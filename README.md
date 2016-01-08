@@ -10,4 +10,6 @@ Completed user stories:
 - [x] Required: Style UI
 - [x] Optional: Split bill views
 
+![Tipper](http://cdn.makeagif.com/media/1-08-2016/_RqT4H.gif)
+
 :shit:
