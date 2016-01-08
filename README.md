@@ -8,6 +8,6 @@ Completed user stories:
 - [x] Required: Basic tip calculator functionality
 - [x] Required: Settings page
 - [x] Required: Style UI
-- [x] Optional: Remember the tip % amount across app restarts (within 60 seconds)
+- [x] Optional: Tip % persistence
 
 :shit:
